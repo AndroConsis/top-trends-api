@@ -44,7 +44,7 @@ app.use(function(err, req, res, next) {
 
 var port = process.env.PORT;
 if (port == null || port == "") {
-  port = 8000;
+  port = 80;
 };
 var listener = app.listen(port, function() {
   console.log("Listening on port " + listener.address().port);
